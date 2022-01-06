@@ -33,6 +33,6 @@ npm install
 
 ## Team
 
-Anjali Nainani | https://github.com/anjinai | https://www.linkedin.com/in/anjali-nainani
+Anjali Nainani | [GitHub](https://github.com/anjinai) | [LinkedIn](https://www.linkedin.com/in/anjali-nainani)
 
 Nischal Vasant |                            |
