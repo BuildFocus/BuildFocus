@@ -1,9 +1,14 @@
-import React, {setState, setResponse, useState} from 'react';
+import React from 'react';
+// These are the two items from react native image picker.
+// Lanch Camera allows for launching the camera and launch image library gives you the camera roll.
 import {launchCamera, launchImageLibrary} from 'react-native-image-picker';
+// This is some styling that is being used via react native paper.
+// FAB is floating action button.
 import {FAB, Portal, Provider} from 'react-native-paper';
-import type {Node} from 'react';
-import {MaterialCommunityIcons} from 'react-native-vector-icons';
-import {Text, View, StyleSheet, Image, Platform} from 'react-native';
+// import type {Node} from 'react';
+// import {MaterialCommunityIcons} from 'react-native-vector-icons';
+
+import {View, StyleSheet, Image} from 'react-native';
 
 const App: () => Node = () => {
   const [state, setState] = React.useState({open: false});
@@ -32,10 +37,10 @@ const App: () => Node = () => {
           <FAB.Group
             fabStyle={styles.fab}
             open={open}
-            icon={open ? 'camera' : 'camera'}
+            // icon={open ? 'camera' : 'camera'}
             actions={[
               {
-                icon: 'camera',
+                // icon: 'camera',
                 small: false,
                 onPress: () => {
                   launchCamera(
@@ -49,7 +54,7 @@ const App: () => Node = () => {
                 },
               },
               {
-                icon: 'image-area',
+                // icon: 'image-area',
                 small: false,
                 onPress: () => {
                   launchImageLibrary(
